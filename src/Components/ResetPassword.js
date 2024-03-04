@@ -12,7 +12,7 @@ function ResetPassword({password,setPassword}) {
         
     }
 
-    const res = await fetch(`https://mongoose-user-with-url.vercel.app/url/reset-new-password/:token`, {
+    const res = await fetch(`https://urlshortner-back-end.vercel.app/url/reset-new-password/:token`, {
     method :"POST",
     body : JSON.stringify(userInfo),
     headers:{

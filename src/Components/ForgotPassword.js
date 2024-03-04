@@ -9,7 +9,7 @@ function ForgotPassword({email,setEmail}) {
     const userInfo = {
       email
           }
-  const response = await fetch("https://mongoose-user-with-url.vercel.app/url/forgotpassword", {
+  const response = await fetch("https://urlshortner-back-end.vercel.app/url/forgotpassword", {
   method:"POST",
   body:JSON.stringify(userInfo),
   headers :{

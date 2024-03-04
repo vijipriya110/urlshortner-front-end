@@ -11,7 +11,7 @@ function LoginPage({email, setEmail, password, setPassword}) {
         password,
     }
 
-    const res = await fetch (`https://mongoose-user-with-url.vercel.app/url/login`, {
+    const res = await fetch (`https://urlshortner-back-end.vercel.app/url/login`, {
     method :"POST",
     body : JSON.stringify(userInfo),
     headers:{

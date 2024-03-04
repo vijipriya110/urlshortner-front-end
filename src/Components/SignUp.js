@@ -12,7 +12,7 @@ function SignUp({email,setEmail,password,setPassword,name,setName}){
       password
 
     }
-  const response = await fetch("https://mongoose-user-with-url.vercel.app/url/signup", {
+  const response = await fetch("https://urlshortner-back-end.vercel.app/url/signup", {
   method:"POST",
   body:JSON.stringify(userInfo),
   headers :{

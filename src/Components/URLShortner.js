@@ -12,7 +12,7 @@ function URLShortner({title, setTitle, longurl, setLongurl}) {
 
     useEffect(()=>{
       const getuser = async () =>{
-          const response = await fetch("https://mongoose-user-with-url.vercel.app/url/getuser", {
+          const response = await fetch("https://urlshortner-back-end.vercel.app/url/getuser", {
             method:"GET",
             headers :{
               "Content-Type":"application/json",
@@ -35,7 +35,7 @@ function URLShortner({title, setTitle, longurl, setLongurl}) {
           longurl
       }
     
-    const response = await fetch ("https://mongoose-user-with-url.vercel.app/url/addurl",  {
+    const response = await fetch ("https://urlshortner-back-end.vercel.app/url/addurl",  {
     method:"POST",
     body:JSON.stringify(userInfo),
     headers :{

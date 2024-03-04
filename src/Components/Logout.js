@@ -7,7 +7,7 @@ function Logout() {
     const handleLogout = async()=>{
         
 
-    const res = await fetch(`https://mongoose-user-with-url.vercel.app/url/logout`, {
+    const res = await fetch(`https://urlshortner-back-end.vercel.app/url/logout`, {
         method :"GET",
         headers:{
             "Content-Type":"application/json",
